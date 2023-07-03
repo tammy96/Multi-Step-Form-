@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>State Form Tailwind</title>
+   
+</head>
+<body>
+    
+
+    <div id="container" class="container bg-white w-full h-auto flex flex-col justify-center items-center mx-auto mt-3 p-3">
+      <!-- <div class="w-full max-w-xs"> -->
+
+        <h3 class="response-msg text-center w-full max-w-xl text-2xl font-bold text-blue-400 mt-20 border-solid border-purple-500">Submission Successful</h3>
+  
+        <div class="form-wrap flex flex-col items-center w-full max-w-xl space-y-10 mt-20 text-center">
+          <h1 class="font-bold max-w-xl text-4xl text-center">Sign Up</h1>
+          <p class="max-w-sm text-lg space-y-3 text-primaryColor">Wanna be a part of this amazing journey? hop on then</p>
+
+          <form class="form-1 rounded w-full bg-slate-200 px-8 p-6 space-y-6 shadow-md">
+            <div class="form-group group-1 mb-4">
+              <label class="block text-lg text-left mb-2" for="email">Email</label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" id="email" />
+            </div>
+            <div class="form-group group-2 mb-4">
+              <label class="block text-lg text-left mb-2" for="password">Password</label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" name="password" id="password" />
+            </div>
+            <div class="form-group group-3">
+              <label class="block text-lg text-left mb-2" for="password2">Confirm Password</label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" name="password2" id="password2" /> 
+            </div>
+
+            <div class="flex flex-col space-y-6 items-center w-full justify-between">
+              <button class="btn-1 bg-primaryColor hover:bg-primaryColor text-white font-bold py-2 px-4 
+              rounded w-full focus:outline-none focus:shadow-outline" type="submit" value="Add">Next</button>
+               <!-- <p class="bottom-text pb-3">
+              By clicking the next button, you agree to our
+              <a href="#">Terms & Conditions</a> and
+              <a href="#">Privacy Policy</a>
+            </p> -->
+            </div>
+          </form>
+  
+  
+            <form class="form-2 bg-slate-200 rounded w-full p-6 space-y-6 shadow-md">
+
+            <div class="form-group group-4">
+              <label class="flex text-lg text-left mb-2" for="full_name">Full Name</label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+              focus:outline-none focus:shadow-outline" type="text" name="full_name" placeholder="Full Name" id="full_name" />
+            </div>
+  
+            <div class="form-group group-5">
+              <label class="flex text-lg text-left mb-2" for="number">Age</label>
+              <input type="number" id="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+              focus:outline-none focus:shadow-outline" placeholder="Select date" />
+            </div>
+  
+            <div class="form-group group-6">
+              <label for="date" class="flex text-lg text-left mb-2">Date Of Birth</label>
+              <input type="date" id="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+              focus:outline-none focus:shadow-outline" />
+            </div>
+  
+            <div class="form-group group-7">
+              <label for="sex" class="flex text-lg text-left mb-2">Sex</label>
+              <select name="Sex" id="sex" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+              focus:outline-none focus:shadow-outline">
+                <option value="male">male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+             
+            </div>
+
+            <div class="flex flex-row space-x-6 items-center justify-between">
+              <button type="submit" class="btn-reverse bg-primaryColor text-white font-bold py-2 px-4 
+            rounded w-full focus:outline-none focus:shadow-outline">Back</button>
+            <button type="submit" class="btn-2 bg-primaryColor text-white font-bold py-2 px-4 
+            rounded w-full focus:outline-none focus:shadow-outline" value="Add">Next Page</button>
+            </div>
+          </form>
+  
+  
+          <form class="form-3 bg-slate-200 rounded w-full p-6 space-y-6 shadow-md">
+  
+           <div class="form-group group-8">
+            <label for="degree" class="flex text-lg text-left mb-2">Highest Qualification</label>
+            <select name="degree" id="degree" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+            focus:outline-none focus:shadow-outline">
+              <option value="bsc">BSC</option>
+              <option value="msc">MSC</option>
+              <option value="0 level">0-Level</option>
+            </select>
+          </div>
+  
+  
+          <div class="form-group group-9">
+            <label for="name" class="flex text-lg text-left mb-2">School Name</label>
+            <input type="text" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+            focus:outline-none focus:shadow-outline" />
+          </div>
+  
+          <div class="form-group group-10">
+            <label for="message" class="flex text-lg text-left mb-2">What Are Your skills</label>
+            <textarea name="message" id="message" cols="20" rows="3" class="shadow appearance-none border rounded w-full focus:text-left py-2 px-3 text-gray-700 leading-tight 
+            focus:outline-none focus:shadow-outline">
+            </textarea>
+          </div>
+  
+          <div class="flex flex-row space-x-6 items-center justify-between">
+            <button type="submit" class="btn-reverse-2 bg-primaryColor text-white font-bold py-2 px-4 
+            rounded w-full focus:outline-none focus:shadow-outline">Back</button>
+            <button type="submit" class="btn-3 bg-primaryColor text-white font-bold py-2 px-4 
+            rounded w-full focus:outline-none focus:shadow-outline" value="Add">submit</button>
+            </div>
+
+            <p class="bottom-text block">
+              By clicking the Sign Up button, you agree to our
+              <a href="#">Terms & Conditions</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </form>
+  
+        </div>
+      </div>
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>
